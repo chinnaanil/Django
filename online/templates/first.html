@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cheif election commission</title>
+    <link rel="stylesheet" href="{% static 'first.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body >
+
+  
+    {% comment %} <a href="#" class="logo"  style="text-align:first"><img src="https://th.bing.com/th?id=OSAAS.F54C3E3760909D54F34D396A5FA78920&w=80&h=80&c=1&rs=1&o=6&pid=5.1"></a> {% endcomment %}
+    {% comment %} <a href="#" class="logo"  style="text-align:first"><img src="https://www.india.gov.in/sites/upload_files/npi/files/logo_1.png"></a> {% endcomment %}
+    
+    <div class="copyright">
+    <p> Call Center Toll Free No 1950(10:00AM To 05:00PM)</p>
+    <h5><marquee behavior="" direction="left">
+        This Website is aimed at demystifying the work relating to the conduct of elections. Elections are the cornerstone of a vibrant democracy.</marquee></h5>
+</div>
+    
+     <header>
+        <div class="logo">
+    <a href="contact" class="logo"  style="text-align:first"><img src="https://ceoandhra.nic.in/ceoap_new/ceo/images/logo.png"></a>
+    <div style="text-align:end">
+    </div>
+        </div>
+       
+<div style="align-items:end">
+  <form method="POST" action={% url "search" %}>
+    {% csrf_token %}
+        <input type="text" id="search" name="search" placeholder="search here....">
+        <button>search</button><br><br>
+     
+        </div>
+        <hr>
+      </form>
+</header>
+
+
+    <ul class="navbar" >
+        <li><a href="{% url 'anil' %}">Home</a></li>
+      
+       
+            <li class="nav-item dropdown">
+                <button class="btn btn-blue dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  About Us
+                </button>
+                <ul class="dropdown-menu dropdown-menu-white">
+                  <li><a class="dropdown-item" href="{% url 'fool' %}">organization</a></li>
+                  <li><a class="dropdown-item" href="{% url 'fool' %}">CEO's Desk</a></li>
+           
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <button class="btn btn-blue dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Political Parties/Candidat
+                </button>
+                <ul class="dropdown-menu dropdown-menu-white">
+                  <li><a class="dropdown-item" href="#">Political patties</a></li>
+                  <li><a class="dropdown-item" href="#">Media certification & monitoring community(MCMC)</a></li>
+                  <li><a class="dropdown-item" href="#">Election symbol</a></li>
+                  <li><a class="dropdown-item" href="#">Candidate Nomination and other form</a></li>
+                  <li><a class="dropdown-item" href="#">candidate affidarits</a></li>
+                  <li><a class="dropdown-item" href="#">Service voter</a></li>
+                  <li><a class="dropdown-item" href="#">candidate application</a></li>
+           
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <button class="btn btn-blue dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    EVM/VVPAT
+                </button>
+                <ul class="dropdown-menu dropdown-menu-white">
+                  <li><a class="dropdown-item" href="#">FAQs on EVM</a></li>
+                  <li><a class="dropdown-item" href="#">Manual on EVM and VVPAT</a></li>
+                  <li><a class="dropdown-item" href="#">VVPAT Awereness</a></li>
+                  <li><a class="dropdown-item" href="#">Presentation on EVM eBook/pdf</a></li>
+                 
+           
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <button class="btn btn-blue dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    State Profile
+                </button>
+                <ul class="dropdown-menu dropdown-menu-white">
+                  <li><a class="dropdown-item" href="#">FAQs on EVM</a></li>
+                  <li><a class="dropdown-item" href="#">Manual on EVM and VVPAT</a></li>
+                  <li><a class="dropdown-item" href="#">VVPAT Awereness</a></li>
+                  <li><a class="dropdown-item" href="#">Presentation on EVM eBook/pdf</a></li>
+                 
+           
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <button class="btn btn-blue dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Officer Details
+                </button>
+                <ul class="dropdown-menu dropdown-menu-white">
+                  <li><a class="dropdown-item" href="#">State Fact sheet</a></li>
+                  <li><a class="dropdown-item" href="#">Pc map</a></li>
+                  <li><a class="dropdown-item" href="#">Ac map</a></li>
+                 
+           
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <button class="btn btn-blue dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Officers
+                </button>
+                <ul class="dropdown-menu dropdown-menu-white">
+                  <li><a class="dropdown-item" href="#">Officer Dtails(DEOs,EROs,BLOs)</a></li>
+                  <li><a class="dropdown-item" href="#">Know you BLO,ERO and DEO</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <button class="btn btn-blue dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Electroll Roll
+                </button>
+                <ul class="dropdown-menu dropdown-menu-white">
+                  <li><a class="dropdown-item" href="#">Final SSR Roll-2024</a></li>
+                  <li><a class="dropdown-item" href="#">Draft SSR Roll-2024</a></li>
+                  <li><a class="dropdown-item" href="#">Supplement (Revision-3)-2024</a></li>
+                  <li><a class="dropdown-item" href="#">Electroal Roll second Quater-2024</a></li>
+                  <li><a class="dropdown-item" href="#">Final SSR Roll-2024</a></li>
+                </ul>
+              </li>
+              
+        <li><a href="{% url 'contact' %}">Contact Us</a></li>
+        
+    </ul>
+    
+    {% block content %}
+    <p>Call Centre Toll Free No - 1950 ( 10:00 AM to 05:30 PM )AAA-AA+
+
+    Search Here
+    Home
+    About Us
+    Voters
+    Political Parties/Candidate
+    EVM/VVPAT
+    State Profile
+    Officer Details
+    Electoral Rolls
+    Contact Us
+    PreviousNext
+    Voter Education
+    General Elections
+    2024
+    Voter Portal
+    Voter Portal
+    ICT Apps
+    ICT Apps
+    Voter Portal
+    Persons With Disabilities
+    ICT Apps
+    Additions, Deletions & Modifications
+    ICT Apps
+    Claims & Objections
+    ICT Apps
+    SSR-2024
+    Current Issues
+    Press Release
+    Instructions
+    Tender & Vacancies
+    Handbooks | Manuals | Checklist
+    Compendium of Instructions
+     ECI - ANNOUNCEMENT OF SCHEDULE FOR GENERAL ELECTIONS TO LOK SABHA AND LEGISLATIVE ASSEMBLIES OF ANDHRA PRADESH - reg.          16 Mar 2024
+     EVM Brochere in Telugu - Reg.
+    
+     Elections EVM Brochure for Candidates & Political Parties on use of EVMs & VVPATs sent by ECI for distribution to all recognized State & National Political parties - Reg.
+    
+     Rajya Sabha - Affidavits.
+    
+     Biennial Elections to the Council of States (Rajya Sabha) 2024 – Gazette Notification.
+    
+     Pre-Certification of Political Advertisement - Reg.
+    
+     Reports and Accounts statements of State level Political Parties.
+    
+     Booth Level Officer _ E-Patrika _ 9th Edition (ENGLISH) - Reg.
+    
+    
+    Electoral Services
+    Check Your name in Electoral Roll
+    Submit Application Online
+    Track your Application Online
+    Know your Polling Station & Officers
+    Download E-epic
+    Know your DEOs, EROs, BLOs
+    FAQ
+    Electoral Roll
+    ECI - Website & Portals
+    Devider
+    Devider
+    Devider
+    Devider
+    Devider
+    Devider
+    ECI - Mobile Apps
+    Devider
+    Devider
+    Devider
+    Devider
+    Devider
+    Devider
+    Social Media
+    Facebook
+    Facebook
+   
+    
+    Instagram
+    Instagram
+    
+    Youtube
+    Youtube
+    
+    Devider
+    Follow Us On Social Media
+    Devider
+    Shri Rajiv Kumar
+    Shri Rajiv Kumar
+    Chief Election Commissioner
+    
+    Shri Arun Goel
+    Shri Gyanesh Kumar
+    Election Commissioner
+    
+    Shri Arun Goel
+    Dr Sukhbir Singh Sandhu
+    Election Commissioner
+    
+    Shri Mukesh Kumar Meena
+    Shri Mukesh Kumar Meena
+    Chief Electoral Officer
+    
+    IMPORTANT LINKS
+    General Elections-2019
+    
+    General Elections-2014
+    
+    AP Legislative Council
+    
+    AP Legislative Council-2023
+    
+    Electors Summary
+    
+    Affidavits
+    
+    RTI Acts
+    
+    Manuals
+    
+    Handbooks
+    
+    Council Affidavits
+    
+    Rajya Sabha - Affidavits
+    
+    Download Forms
+    
+    SSR-2023
+    
+    RELATED LINKS
+    ECI Home page
+    
+    EVM
+    
+    Voter Portal
+    
+    Mee-Seva Centres
+    
+    FAQ's
+    
+    Previous Instructions
+    
+    MOBILE APPLICATIONS
+    Voter Helpline App
+    
+    cVIGIL Mobile APPs
+    
+    Know Your Candidate
+    
+    Voter Turnout APPs
+    
+    Affidavit Portal
+    
+    Candidate Suvidha App
+    
+    CONTACT INFO
+    Room No.192, Ground Floor Building No.5, A.P.Secretariat Velagapudi, Amaravati. 522238
+    
+    Call Center No: 1950 (From 10:00 am to 05:30 pm)
+    
+    ceo_andhrapradesh[at]eci[dot]gov[dot]in
+    All Rights Reserved © Office of the CEO, Andhra Pradesh.</p>
+
+{% comment %}    
+
+ <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://th.bing.com/th/id/OIP.SuHhUDo15cdCmI21B65JSgHaFE?w=268&h=183&c=7&r=0&o=5&cb=10&pid=1.7" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://th.bing.com/th/id/OIP.0Jl-zwnn3TG8E2a28LBliAHaE8?w=271&h=181&c=7&r=0&o=5&cb=10&pid=1.7" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://th.bing.com/th/id/OIP.XlMBITXmBI4LfhrWjvqtBAHaDt?w=286&h=175&c=7&r=0&o=5&cb=10&pid=1.7" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button> {% endcomment %}
+ 
+
+
+  {% comment %} <section id="portfolio">
+    <div class="portfolio-img">
+        <img src="https://th.bing.com/th/id/OIP.SuHhUDo15cdCmI21B65JSgHaFE?w=268&h=183&c=7&r=0&o=5&cb=10&pid=1.7" alt="">
+    </div>
+    <div class="portfolio-img">
+        <img src="https://th.bing.com/th/id/OIP.0Jl-zwnn3TG8E2a28LBliAHaE8?w=271&h=181&c=7&r=0&o=5&cb=10&pid=1.7" alt="">
+    </div>
+    <div class="portfolio-img">
+        <img src="https://th.bing.com/th/id/OIP.XlMBITXmBI4LfhrWjvqtBAHaDt?w=286&h=175&c=7&r=0&o=5&cb=10&pid=1.7" alt="">
+    </div>
+    <div class="portfolio-img">
+        <img src="https://th.bing.com/th/id/OIP.skDB_WxOhbVwmAkg1qqjpgAAAA?w=255&h=180&c=7&r=0&o=5&cb=10&pid=1.7" alt="">
+    </div>
+    
+</section>    {% endcomment %}
+{% comment %} <div class="card" style="width: 18rem;">
+  <img src="https://th.bing.com/th/id/OIP.SuHhUDo15cdCmI21B65JSgHaFE?w=268&h=183&c=7&r=0&o=5&cb=10&pid=1.7" class="card-img-top" alt="">
+  <div class="card-body">
+    <h5 class="card-title">Person With Disabilities</h5>
+    {% comment %} <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> {% endcomment %}
+    {% comment %} <a href="#" class="btn btn-primary">Go somewhere</a> {% endcomment %}
+  {% comment %} </div>
+</div><br><br> {% endcomment %}
+
+{% comment %} <div class="card" style="width: 18rem;" style="text-align:center">
+  <img src="https://ceoandhra.nic.in/ceoap_new/ceo/images/persons_icon.jpg" class="card-img-top" alt="">
+  <div class="card-body">
+    <h5 class="card-title">ICT Apps</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div><br><br>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://ceoandhra.nic.in/ceoap_new/ceo/images/ECI_GE.jpg" class="card-img-top" alt="">
+  <div class="card-body">
+    <h5 class="card-title">Vote Education(SVEEP)</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div><br><br>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://th.bing.com/th/id/OIP.SuHhUDo15cdCmI21B65JSgHaFE?w=268&h=183&c=7&r=0&o=5&cb=10&pid=1.7" class="card-img-top" alt="">
+  <div class="card-body">
+    <h5 class="card-title">Vote Portal</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div><br>  {% endcomment %}
+
+ 
+    
+
+    
+   
+   
+     
+{% comment %} 
+<div class="card" style="width: 18rem;" style="text-align:center">
+  <img src="https://ceoandhra.nic.in/ceoap_new/ceo/images/persons_icon.jpg" class="card-img-top" alt="">
+  <div class="card-body">
+    <h5 class="card-title">ICT Apps</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div><br><br>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://ceoandhra.nic.in/ceoap_new/ceo/images/ECI_GE.jpg" class="card-img-top" alt="">
+  <div class="card-body">
+    <h5 class="card-title">Vote Education(SVEEP)</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div><br><br>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://th.bing.com/th/id/OIP.SuHhUDo15cdCmI21B65JSgHaFE?w=268&h=183&c=7&r=0&o=5&cb=10&pid=1.7" class="card-img-top" alt="">
+  <div class="card-body">
+    <h5 class="card-title">Vote Portal</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div><br>   {% endcomment %}
+{% comment %} 
+<footer>
+<div class="copy" style="text-align:center">
+  <p>All Rights Reserved © Office of the CEO, Andhra Pradesh.</p>
+</div> 
+
+</footer> {% endcomment %}
+
+
+{% include "messeges.html" %}
+{% endblock content %}
+
+
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+{% block content %}
+
+    
+     <header>
+        <div class="logo">
+    <a href="#" class="logo"  style="text-align:first"><img src="https://ceoandhra.nic.in/ceoap_new/ceo/images/logo.png"></a>
+    
+</div><br><br>
+
+<div>
+    <form method="POST" action={% url "search" %}  style="align-items:enter">
+      {% csrf_token %}
+          <input type="text" id="search" name="search" placeholder="search here....">
+          <button>search</button><br><br><br>
+         
+       
+          </div><hr>
+        </form>
+
+    <div>
+        <table border="1" width=100%>
+            <thead>
+            <tr>
+                <th>NO</th>
+                <th>VOTE_ID</th>
+                <th>AGE</th>
+                <th>MANDAL</th>
+                <th>DISTRIC</th>
+                <th>STATE</th>
+                <th>DELETE</th>
+                <th>UPDATE</th>
+            </tr>
+            </thead>
+            <tbody>
+                <form method="POST">
+                    {% csrf_token %}
+                       <input type="hidden" name="display" value="true">
+                       <input type="submit" value="display" ><br><br>
+                       
+                    
+                </form>
+                {% for anil in  table %}
+                <tr >
+                   <th>{{ forloop.counter }}</th>
+                   <td>{{ anil.vote_id }}</td>
+                   <td>{{ anil.age }}</td>
+                   <td>{{ anil.mandal }}</td>
+                   <td>{{ anil.distic }}</td>
+                   <td>{{ anil.state }}</td>
+                   <td><a href="{% url "delete" anil.id %}"><button>delete</button></a></td>
+                   <td><a href="{% url "update" anil.id %}"><button>update</button></a></td>
+            </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+     </div><br><br>
+     <h1 style="text-align:center">
+        <button><a href="{% url "signout" %}">signout</a></button>
+      </h1>
+ {% include "messeges.html" %}
+ {% endblock content %}
+
+
+</body>
+</html>
+

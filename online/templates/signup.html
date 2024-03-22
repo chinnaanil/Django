@@ -1,0 +1,23 @@
+{% extends "first.html" %}
+
+{% block content %}
+<h2 style="text-align:center">Sign UP Now</h2><br><br>
+<form method="POST" style="text-align:center">
+    {% csrf_token %}
+    <input type="text" id="username" name="username" placeholder="Enter username" size="45"required/><br><br>
+    <input type="text" id="email" name="email" placeholder="Enter email" required/>
+    <input type="number" id="vote_id" name="vote_id" placeholder="Enter vote_id" required/><br><br>
+    <input type="number" id="age" name="age" placeholder="Enter age"  size="25"required/>
+    <input type="text" id="mandal" name="mandal" placeholder="Enter mandal"  size="20" required/><br><br>
+    <input type="text" id="distic" name="distic" placeholder="Enter distic" required/>
+    <input type="text" id="state" name="state" placeholder="Enter state" required/><br><br>
+    <input type="password" id="password" name="password" placeholder="Enter password" required/>
+    <input type="password" id="confirm_password" name="confirm_password" placeholder="Enter confirm_password" required/><br><br>
+    <button type="submit"><a href="{% url 'signup'  %}"></a>Signup</button>
+    
+</form>
+
+{% include "messeges.html" %}
+
+{% endblock content %}
+

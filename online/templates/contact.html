@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block content %}
+    <header>
+        <div class="logo">
+    <a href="#" class="logo"  style="text-align:first"><img src="https://ceoandhra.nic.in/ceoap_new/ceo/images/logo.png"></a>
+    
+</div>
+    <h2>Cantact Us</h2>
+    <hr>
+    <h3 style="text-align:center"> CHINNA OBIGALL ANIL, Developer <br>
+Create With Django ,<br>
+With Using Frontend & Backend.</h3><br>
+<hr>
+<h3 style="text-align:center">For any Election related enquiry, Please call our Help Line No:</h3>
+    <h3 style="text-align:center">Call Center No: 1950 ( From 10 am to 6 pm ).</h3>
+    <hr>
+    <h2 style="text-align:center">Address</h2>
+    <h3 style="text-align:center">4/3  Yamavaram(v),Muddanur(m),Kadapa(d) pin:516380  Andra Pradesh.  | (Phone: +91-7989927612) |   E-Mail:- chinnaanil649@gmail.com .</h3>
+<hr>
+<h3 >back <a href="{% url 'anil' %}">home</a></h3>
+{% include "messeges.html" %}
+
+    {% endblock content %}
+</body>
+</html>

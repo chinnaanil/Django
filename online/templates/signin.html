@@ -1,0 +1,15 @@
+{% extends "first.html" %}
+
+{% block content %}
+<h2 style="text-align:center">Sign In Now</h2><br>
+<form method="POST" style="text-align:center">
+{% csrf_token %}
+    <input type="text" id="username" name="username" placeholder="Enter username" required/><br><br>
+    <input type="password" id="password" name="password" placeholder="Enter password" required/><br><br>
+    <button type="submit"><a href="{% url 'signin' %}"></a>Signin</button>
+</form>
+
+{% include "messeges.html" %}
+{% endblock content %}
+
+
